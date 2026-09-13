@@ -1,8 +1,8 @@
-# 🧠 Advancing Alzheimer's Disease Diagnosis
+# 🧠 Advancing Alzheimer’s Disease Diagnosis: Enhancing Predictive Accuracy with Explainable Machine Learning on Multimodal Sensors and Imaging Data.
 
-An AI-driven project focused on **enhancing predictive accuracy** for Alzheimer's disease diagnosis using a Convolutional Neural Network (CNN) built in TensorFlow/Keras. 
+An AI-driven project focused on **enhancing predictive accuracy** for Alzheimer's disease diagnosis using a Convolutional Neural Network (CNN), an Artificial Neural Network (ANN), and a Random Forest (RF) Model built in TensorFlow/Keras. 
 
-This repository showcases the implementation, testing, and evaluation of deep learning models trained to identify patterns in multimodal medical sensors and imaging data.
+This repository showcases the implementation, testing, and evaluation of Machine learning models and Deep Learning models trained to identify patterns in imaging data. 
 
 ---
 
@@ -19,17 +19,20 @@ Alzheimer's disease is a progressive neurologic disorder that causes the brain t
 ├── alzheimer_model_testing.ipynb   # Notebook dedicated to testing predictions and visual evaluations
 ├── Untitled.ipynb                  # Experimental notebook / scratchpad
 └── alzheimers_cnn_model.h5         # Pre-trained CNN weights (Managed securely via Git LFS, 254MB)
+└── alzheimers_ann_model.h5         # Pre-trained ANN weights (Managed securely via Git LFS, 2MB)
+└── alzheimers_rfn_model.h5         # Pre-trained RF weights (Managed securely via Git LFS, 254MB)
+
 ```
 
 ---
 
 ## 🛠️ Requirements & Installation
 
-To run the notebooks locally, make sure you have Python installed along with the required libraries. 
+To run the notebooks locally, you should have Python installed along with the required libraries. 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/Mandalajay/Alzheimrs-detection_machineLearning.git
+git clone https://github.com/Mandalajay/Advancing_Alzheimer_Diagnosis_Using_MachineLearning
 cd Alzheimrs-detection_machineLearning
 ```
 
@@ -57,6 +60,8 @@ import tensorflow as tf
 
 # Load the H5 binary model file
 model_path = "alzheimers_cnn_model.h5"
+model_path = "alzheimers_ANN_model.h5"
+model_path = "alzheimers_RF_model.h5"
 model = tf.keras.models.load_model(model_path)
 
 # Verify model architecture and parameters
@@ -65,11 +70,12 @@ model.summary()
 
 ### Testing Predictions
 Open the `alzheimer_model_testing.ipynb` notebook in Jupyter Lab or Jupyter Notebook to run test images/data through the network and visualize the predictive outputs.
+I have personally used Google Colab to run the model efficiently. The problem with Google Colab was the limited computing units available, which caused a lot of difficulty getting output till the end.
 
 ---
 
 ## 📊 Model & Features
-* **Architecture**: Deep Convolutional Neural Network (CNN) optimized for complex feature extraction.
+* **Architecture**: ANN, CNN, and RF  optimized for complex feature extraction.
 * **Large File Optimization**: Employs **Git Large File Storage (LFS)** to seamlessly host binary model components on GitHub without cluttering text logs.
 
 ---
