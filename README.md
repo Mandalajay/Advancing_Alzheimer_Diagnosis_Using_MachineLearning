@@ -20,7 +20,7 @@ Alzheimer's disease is a progressive neurologic disorder that causes the brain t
 ├── Untitled.ipynb                  # Experimental notebook / scratchpad
 └── alzheimers_cnn_model.h5         # Pre-trained CNN weights (Managed securely via Git LFS, 254MB)
 └── alzheimers_ann_model.h5         # Pre-trained ANN weights (Managed securely via Git LFS, 2MB)
-└── alzheimers_rfn_model.h5         # Pre-trained RF weights (Managed securely via Git LFS, 254MB)
+└── alzheimers_rf_model.h5         # Pre-trained RF weights (Managed securely via Git LFS, 254MB)
 
 ```
 
